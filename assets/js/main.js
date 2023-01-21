@@ -89,3 +89,13 @@ sr.reveal(".qualification__footer-text, .contact__content", {
 });
 
 sr.reveal(".qualification__footer .btn, .contact__btn", { origin: "right" });
+
+
+
+
+
+
+
+
+
+
