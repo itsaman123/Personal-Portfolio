@@ -1,374 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio Website</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/assets/img/Black White Simple Monochrome Initial Name Logo.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio Website</title>
+  <link rel="icon" type="image/x-icon" href="/assets/img/Black White Simple Monochrome Initial Name Logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-  <body>
-    <header id="header" class="header">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav__brand">
+          Aman<i class="ri-code-s-slash-line"></i>
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#hero" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#service" class="nav__link">Profiles</a>
+            </li>
+            <li class="nav__item">
+              <a href="#project" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__toggle">
+          <i id="nav-toggle" class="ri-menu-3-line"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section id="hero" class="hero">
       <div class="container">
-        <nav class="nav">
-          <a href="index.html" class="nav__brand">
-            Aman<i class="ri-code-s-slash-line"></i>
-          </a>
-          <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#hero" class="nav__link">Home</a>
-              </li>
-              <li class="nav__item">
-                <a href="#about" class="nav__link">About</a>
-              </li>
+        <div class="d-grid hero__wrapper">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Hi, I am <br />
+              Aman Maurya & <br /> <span class="titleclass" style="font-size: 3.5rem;">I am a Software Developer</span>
+            </h1>
+          </div>
 
-              <li class="nav__item">
-                <a href="#service" class="nav__link">Profiles</a>
-              </li>
-              <li class="nav__item">
-                <a href="#project" class="nav__link">Projects</a>
-              </li>
-              <li class="nav__item">
-                <a href="#contact" class="nav__link">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="nav__toggle">
-            <i id="nav-toggle" class="ri-menu-3-line"></i>
-          </div>
-        </nav>
+          <img src="assets/img/profile-pic (9).png" alt="Aman" class="hero__img" />
+        </div>
       </div>
-    </header>
-    <main class="main">
-      <section id="hero" class="hero">
-        <div class="container">
-          <div class="d-grid hero__wrapper">
-            <div class="hero__content">
-              <h1 class="hero__title">
-                Hi, I am <br />
-                Aman Maurya & <br /> <span class="titleclass"  style="font-size: 3.5rem;">I am a Software Developer</span>
-              </h1>
-            </div>
+    </section>
 
-            <img
-              src="assets/img/profile-pic (9).png"
-              alt="Aman"
-              class="hero__img"
-            />
-          </div>
+    <!-- About  -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">About Me</h2>
+          <span class="section__subtitle">Who am I</span>
         </div>
-      </section>
+        <div class="d-grid about__wrapper">
+          <div class="about__content">
+            <h3 class="about__title">I'm a MERN Stack Developer.</h3>
+            <p class="about__description">
+              I'm Aman Maurya, a dedicated MERN stack developer with a B.Tech in Computer Science from NIET. I
+              specialize in JavaScript, Node.js, REST APIs, HTML, CSS, SQL, and MongoDB.
 
-      <!-- About  -->
-      <section id="about" class="section about">
-        <div class="container">
-          <div class="section__header">
-            <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">Who am I</span>
+              Currently working as a Software Developer at Softsensor.ai, I focus on full-stack development using
+              Node.js, Express.js, MongoDB, React.js, TypeScript, TanStack React Query, Redux, and Context API. I follow
+              Agile practices with Jira sprints, improving system performance and user experience.
+
+              Previously, I interned at Prutor@IIT Kanpur and FastFindFirm, building full-stack and React-based
+              applications. I've also developed notable projects like Resilient Community, ConvoCube, and Vehicle Rental
+              Service. I'm skilled in tools like Git, GitHub, and VS Code, and I'm passionate about learning,
+              problem-solving, and contributing to the tech community.
+            </p>
+            <a href="https://www.linkedin.com/in/aman-maurya-47b5131b5/" class="btn btn--primary">Contact Me</a>
           </div>
-          <div class="d-grid about__wrapper">
-            <div class="about__content">
-              <h3 class="about__title">I'm a MERN Stack Developer.</h3>
-              <p class="about__description">
-                My name is Aman Maurya. As a MERN stack developer with a B.Tech in Computer Science (82.95%) from NIET, I specialize in Java, JavaScript, Node.js, Rest APIs, HTML, CSS, SQL, and MongoDB. My experience includes internships at Prutor@IIT Kanpur and FastFindFirm, where I worked on full-stack and React-based projects. Notable projects include Resilient Community, ConvoCube, and Vehicle Rental Service. Skilled in Git, GitHub, and VS Code. I'm most passionate about giving back to the community, and my goal is to pursue my passion.Altogether, I would sum up myself as an enthusiast and a hardworker; who would do anything to complete the task.
-              </p>
-              <a
-                href="https://www.linkedin.com/in/aman-maurya-47b5131b5/"
-                class="btn btn--primary"
-                >Contact Me</a
-              >
-            </div>
-            <div class="skills">
-              <h3 class="skills__title">My Skills</h3>
-              <div class="skills__wrapper">
-                <div class="skills__content">
-                  <h4 class="skills__subtitle"></h4>
-                  <ul class="skills__list">
-                    <li class="skills__item">
-                      <i class="fa-brands fa-java"></i> Java
-                    </li>
+          <div class="skills">
+            <h3 class="skills__title">My Skills</h3>
+            <div class="skills__wrapper">
+              <div class="skills__content">
+                <h4 class="skills__subtitle"></h4>
+                <ul class="skills__list">
+                  <li class="skills__item">
+                    <i class="fa-brands fa-java"></i> Java
+                  </li>
 
-                    <li class="skills__item">
-                      <i class="fa-brands fa-node-js"></i> Node.js
-                    </li>
-                    <li class="skills__item">
-                      <i class="fa-regular fa-square"></i> Express.js
-                    </li>
-                    <li class="skills__item">
-                      <i class="fa-regular fa-square"></i>
-                      MySQL
-                    </li>
-                    <li class="skills__item">
-                      <i class="fa-brands fa-git"></i> Git
-                    </li>
-                    <li class="skills__item">
-                      <i class="fa-brands fa-github"></i> Github
-                    </li>
-                  </ul>
-                </div>
-                <div class="skills__content">
-                  <h4 class="skills__subtitle"></h4>
-                  <ul class="skills__list">
-                    <li class="skills__item">
-                      <i class="fa-brands fa-html5"></i>
-                      HTML
-                    </li>
-                    <li class="skills__item">
-                      <i class="fa-brands fa-css3-alt"></i>
-                      CSS
-                    </li>
-                    <li class="skills__item">
-                      <i class="fa-brands fa-js"></i>
-                      JavaScript
-                    </li>
-                    <li class="skills__item">
-                      <i class="fa-regular fa-square"></i>
-                      TypeScript
-                    </li>
-                    <li class="skills__item">
-                      <i class="fa-brands fa-react"></i> React
-                    </li>
-                    <li class="skills__item">
-                      <i class="fa-regular fa-square"></i> MongoDB
-                    </li>
-                  </ul>
-                </div>
+                  <li class="skills__item">
+                    <i class="fa-brands fa-node-js"></i> Node.js
+                  </li>
+                  <li class="skills__item">
+                    <i class="fa-regular fa-square"></i> Express.js
+                  </li>
+                  <li class="skills__item">
+                    <i class="fa-regular fa-square"></i>
+                    MySQL
+                  </li>
+                  <li class="skills__item">
+                    <i class="fa-brands fa-git"></i> Git
+                  </li>
+                  <li class="skills__item">
+                    <i class="fa-brands fa-github"></i> Github
+                  </li>
+                </ul>
+              </div>
+              <div class="skills__content">
+                <h4 class="skills__subtitle"></h4>
+                <ul class="skills__list">
+                  <li class="skills__item">
+                    <i class="fa-brands fa-html5"></i>
+                    HTML
+                  </li>
+                  <li class="skills__item">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    CSS
+                  </li>
+                  <li class="skills__item">
+                    <i class="fa-brands fa-js"></i>
+                    JavaScript
+                  </li>
+                  <li class="skills__item">
+                    <i class="fa-regular fa-square"></i>
+                    TypeScript
+                  </li>
+                  <li class="skills__item">
+                    <i class="fa-brands fa-react"></i> React
+                  </li>
+                  <li class="skills__item">
+                    <i class="fa-regular fa-square"></i> MongoDB
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- services  -->
-      <section id="service" class="section service">
-        <div class="container">
-          <div class="section__header">
-            <h2 class="section__title">Coding Profiles</h2>
-            <span class="section__subtitle">Where I Stand</span>
+    <!-- Experience -->
+    <section id="experience" class="section experience">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Experience</h2>
+          <span class="section__subtitle">My Journey</span>
+        </div>
+        <div class="experience-timeline">
+          <div class="experience-timeline__line"></div>
+          <div class="experience-timeline__item left">
+            <div class="experience-timeline__content">
+              <h3 class="experience__company">Softsensor.ai</h3>
+              <div class="experience__role">Software Developer</div>
+              <div class="experience__location">Jaipur, India</div>
+              <div class="experience__date">May 2024 - Current</div>
+              <div class="experience__total">Total Experience: <span class="exp-years" data-from="2022-08-01"
+                  data-to="now"></span>1.3 years</div>
+            </div>
           </div>
-          <div class="d-grid service__wrapper">
-            <!-- service card 1 -->
-
-            <div class="service__card">
-              <div class="service__icon">
-                <a href="https://leetcode.com/tinycoder49/" target="_blank"
-                  ><img src="/assets/img/leetcode.png" alt=""
-                /></a>
-              </div>
-              <h3 class="service__title">
-                Leetcode <br />
-                <p>I have solve more than 400+ problems on leetcode</p>
-              </h3>
-              <a href="https://leetcode.com/tinycoder49/" class="service__link"
-                >Know More</a
-              >
+          <div class="experience-timeline__item right">
+            <div class="experience-timeline__content">
+              <h3 class="experience__company">Prutor.ai</h3>
+              <div class="experience__role">Software Developer Intern</div>
+              <div class="experience__location">Noida, India</div>
+              <div class="experience__date">Sep 2023 - May 2024</div>
+              <div class="experience__total">Total Experience: <span class="exp-years" data-from="2022-08-01"
+                  data-to="2024-05-01"></span>8 Months</div>
             </div>
-
-            <div class="service__card">
-              <div class="service__icon">
-                <a
-                  href="https://www.codechef.com/users/aman9554"
-                  target="_blank"
-                  ><img src="/assets/img/codechef.png" alt=""
-                /></a>
-              </div>
-              <h3 class="service__title">
-                Codechef<br />2 🌟 on Codechef. <br />
-                Highest rating 1465
-              </h3>
-              <a
-                href="https://www.codechef.com/users/aman9554"
-                class="service__link"
-                >Know More</a
-              >
-            </div>
-
-            <div class="service__card">
-              <div class="service__icon">
-                <a
-                  href="https://auth.geeksforgeeks.org/user/mamanmaurya49/practice"
-                  target="_blank"
-                  ><img src="/assets/img/gfg.png" alt=""
-                /></a>
-              </div>
-              <h3 class="service__title">
-                Geeksforgeeks<br />I have solve more than 150+ problems on
-                GFG<br />
-              </h3>
-              <a
-                href="https://auth.geeksforgeeks.org/user/mamanmaurya49/practice"
-                class="service__link"
-                >Know More</a
-              >
+          </div>
+          <div class="experience-timeline__item left">
+            <div class="experience-timeline__content">
+              <h3 class="experience__company">Fastfindfirm</h3>
+              <div class="experience__role">Software Developer Intern</div>
+              <div class="experience__location">Remote</div>
+              <div class="experience__date">Aug 2022 - Nov 2022</div>
+              <div class="experience__total">Total Experience: <span class="exp-years" data-from="2022-08-01"
+                  data-to="2022-11-30"></span>5 Months</div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Projects -->
-      <section id="project" class="section project">
-        <div class="container">
-          <div class="section__header">
-            <h2 class="section__title">Projects</h2>
-            <span class="section__subtitle">My recent work</span>
+    <!-- services  -->
+    <section id="service" class="section service">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Coding Profiles</h2>
+          <span class="section__subtitle">Where I Stand</span>
+        </div>
+        <div class="d-grid service__wrapper">
+          <!-- service card 1 -->
+
+          <div class="service__card">
+            <div class="service__icon">
+              <a href="https://leetcode.com/tinycoder49/" target="_blank"><img src="/assets/img/leetcode.png"
+                  alt="" /></a>
+            </div>
+            <h3 class="service__title">
+              Leetcode <br />
+              <p>I have solve more than 400+ problems on leetcode</p>
+            </h3>
+            <a href="https://leetcode.com/tinycoder49/" class="service__link">Know More</a>
           </div>
-          <div class="d-grid project__wrapper">
-            <!-- pr#1 -->
-            <div class="project__content">
-              <img
-                src="assets/img/resil.jpeg"
-                alt="ecommerce Website"
-                class="project__img"
-              />
-              <h3 class="project__title">Resilience Community</h3>
-              <p class="project__description">
-                Disaster Management application that alerts users about impending disasters.
-              </p>
-              <a
-                href="https://github.com/itsaman123/Resilient-Community"
-                class="project__link"
-                >Source Code <i class="ri-arrow-right-line"></i
-              ></a>
-               
-            </div>
-            <div class="project__content">
-              <img
-                src="./assets//img/mern-chat-app.png"
-                alt="error"
-                class="project__img"
-              />
-              <h3 class="project__title">Real Time Chat-App</h3>
-              <p class="project__description">
-                A real-time chat application with secure user authentication and instant messaging.
-              </p>
-              <a
-                href="https://github.com/itsaman123/ConvoCube-MERN-Chat-App"
-                class="project__link"
-                >Source Code <i class="ri-arrow-right-line"></i
-              ></a>
-            </div>
-            <div class="project__content">
-              <img
-                src="assets/img/rental.png"
-                alt="ecommerce Website"
-                class="project__img"
-              />
-              <h3 class="project__title">Rental Service</h3>
-              <p class="project__description">
-                Design and implemented a web app where users can book vehicles like Car, Bikes and eCycles.
-              </p>
-              <a
-                href="https://github.com/itsaman123/Rental-Service"
-                class="project__link"
-                >Source Code <i class="ri-arrow-right-line"></i
-              ></a>
-               
-            </div>
-            <div class="project__content">
-              <img
-                src="assets/img/ecommerce2.jpg"
-                alt="ecommerce Website"
-                class="project__img"
-              />
-              <h3 class="project__title">Electronics Ecommerce</h3>
-              <p class="project__description">
-                It is a web app that sell all types of electronics items. In
-                front I have use React.Js, React-router, Redux and Css and for
-                backed I have used Google Firebase and Stripe for payment
-                integratio.
-              </p>
-              <a
-                href="https://github.com/itsaman123/Electronics-eCommerce"
-                class="project__link"
-                >Source Code <i class="ri-arrow-right-line"></i
-              ></a>
-              <a
-                href="https://electronic-shop-ef112.web.app/"
-                class="project__link"
-                >Demo <i class="ri-arrow-right-line"></i
-              ></a>
-            </div>
 
-            <!-- pr#2 -->
-            <div class="project__content">
-              <img
-                src="assets/img/portfol.png"
-                alt="portfolio"
-                class="project__img"
-              />
-              <h3 class="project__title">Portfolio</h3>
-              <p class="project__description">
-                It is a website that compiles all my work samples and documents
-                collected in a structured manner covering all projects, skills
-                and Education history.
-              </p>
-              <a
-                href="https://github.com/itsaman123/Personal-Portfolio"
-                class="project__link"
-                >Source Code <i class="ri-arrow-right-line"></i
-              ></a>
-              <a href="https://imaman.netlify.app/" class="project__link"
-                >Demo <i class="ri-arrow-right-line"></i
-              ></a>
+          <div class="service__card">
+            <div class="service__icon">
+              <a href="https://www.codechef.com/users/aman9554" target="_blank"><img src="/assets/img/codechef.png"
+                  alt="" /></a>
             </div>
+            <h3 class="service__title">
+              Codechef<br />2 🌟 on Codechef. <br />
+              Highest rating 1465
+            </h3>
+            <a href="https://www.codechef.com/users/aman9554" class="service__link">Know More</a>
+          </div>
 
-            <!-- pr#3 -->
-            <div class="project__content">
-              <img
-                src="assets/img/compiler.png"
-                alt="error"
-                class="project__img"
-              />
-              <h3 class="project__title">Code Editor</h3>
-              <p class="project__description">
-                It is a powerful JavaScript code editor that is used in the frontend development of applications.
-              </p>
-              <a
-                href="https://github.com/itsaman123/React-Code-editor"
-                class="project__link"
-                >Source Code <i class="ri-arrow-right-line"></i
-              ></a>
-              <a href="https://devarena.netlify.app/" class="project__link"
-                >Demo <i class="ri-arrow-right-line"></i
-              ></a>
+          <div class="service__card">
+            <div class="service__icon">
+              <a href="https://auth.geeksforgeeks.org/user/mamanmaurya49/practice" target="_blank"><img
+                  src="/assets/img/gfg.png" alt="" /></a>
             </div>
+            <h3 class="service__title">
+              Geeksforgeeks<br />I have solve more than 150+ problems on
+              GFG<br />
+            </h3>
+            <a href="https://auth.geeksforgeeks.org/user/mamanmaurya49/practice" class="service__link">Know More</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <!-- <div class="project__content">
+    <!-- Projects -->
+    <section id="project" class="section project">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Projects</h2>
+          <span class="section__subtitle">My recent work</span>
+        </div>
+        <div class="d-grid project__wrapper">
+          <!-- pr#1 -->
+          <div class="project__content">
+            <img src="assets/img/resil.jpeg" alt="ecommerce Website" class="project__img" />
+            <h3 class="project__title">Resilience Community</h3>
+            <p class="project__description">
+              Disaster Management application that alerts users about impending disasters.
+            </p>
+            <a href="https://github.com/itsaman123/Resilient-Community" class="project__link">Source Code <i
+                class="ri-arrow-right-line"></i></a>
+
+          </div>
+          <div class="project__content">
+            <img src="./assets//img/mern-chat-app.png" alt="error" class="project__img" />
+            <h3 class="project__title">Real Time Chat-App</h3>
+            <p class="project__description">
+              A real-time chat application with secure user authentication and instant messaging.
+            </p>
+            <a href="https://github.com/itsaman123/ConvoCube-MERN-Chat-App" class="project__link">Source Code <i
+                class="ri-arrow-right-line"></i></a>
+          </div>
+          <div class="project__content">
+            <img src="assets/img/rental.png" alt="ecommerce Website" class="project__img" />
+            <h3 class="project__title">Rental Service</h3>
+            <p class="project__description">
+              Design and implemented a web app where users can book vehicles like Car, Bikes and eCycles.
+            </p>
+            <a href="https://github.com/itsaman123/Rental-Service" class="project__link">Source Code <i
+                class="ri-arrow-right-line"></i></a>
+
+          </div>
+          <div class="project__content">
+            <img src="assets/img/ecommerce2.jpg" alt="ecommerce Website" class="project__img" />
+            <h3 class="project__title">Electronics Ecommerce</h3>
+            <p class="project__description">
+              It is a web app that sell all types of electronics items. In
+              front I have use React.Js, React-router, Redux and Css and for
+              backed I have used Google Firebase and Stripe for payment
+              integratio.
+            </p>
+            <a href="https://github.com/itsaman123/Electronics-eCommerce" class="project__link">Source Code <i
+                class="ri-arrow-right-line"></i></a>
+            <a href="https://electronic-shop-ef112.web.app/" class="project__link">Demo <i
+                class="ri-arrow-right-line"></i></a>
+          </div>
+
+          <!-- pr#2 -->
+          <div class="project__content">
+            <img src="assets/img/portfol.png" alt="portfolio" class="project__img" />
+            <h3 class="project__title">Portfolio</h3>
+            <p class="project__description">
+              It is a website that compiles all my work samples and documents
+              collected in a structured manner covering all projects, skills
+              and Education history.
+            </p>
+            <a href="https://github.com/itsaman123/Personal-Portfolio" class="project__link">Source Code <i
+                class="ri-arrow-right-line"></i></a>
+            <a href="https://imaman.netlify.app/" class="project__link">Demo <i class="ri-arrow-right-line"></i></a>
+          </div>
+
+          <!-- pr#3 -->
+          <div class="project__content">
+            <img src="assets/img/compiler.png" alt="error" class="project__img" />
+            <h3 class="project__title">Code Editor</h3>
+            <p class="project__description">
+              It is a powerful JavaScript code editor that is used in the frontend development of applications.
+            </p>
+            <a href="https://github.com/itsaman123/React-Code-editor" class="project__link">Source Code <i
+                class="ri-arrow-right-line"></i></a>
+            <a href="https://devarena.netlify.app/" class="project__link">Demo <i class="ri-arrow-right-line"></i></a>
+          </div>
+
+          <!-- <div class="project__content">
               <img
                 src="assets/img/blogsite.png"
                 alt="error"
@@ -389,101 +350,84 @@
               ></a>
             </div> -->
 
-            
-          </div>
-        </div>
-      </section>
 
-      <!--Contact -->
-      <section id="contact" class="section contact">
-        <div class="container">
-          <div class="d-grid contact__wrapper">
-            <div class="contact__content">
-              <h2 class="contact__title">
-                Interested in working together? Let's talk
-              </h2>
-            </div>
-            <div class="contact__btn">
-              <a
-                href="https://www.linkedin.com/in/aman-maurya-47b5131b5/"
-                target="_blank"
-                class="btn btn--secondary"
-                >Get in touch</a
-              >
-            </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="d-grid contact__wrapper">
+          <div class="contact__content">
+            <h2 class="contact__title">
+              Interested in working together? Let's talk
+            </h2>
+          </div>
+          <div class="contact__btn">
+            <a href="https://www.linkedin.com/in/aman-maurya-47b5131b5/" target="_blank" class="btn btn--secondary">Get
+              in touch</a>
           </div>
         </div>
-      </section>
-    </main>
-    <!-- footer -->
-    <footer id="footer" class="footer">
-      <div class="container">
-        <div class="d-grid footer__wrapper">
-          <div class="footer__content">
-            <h4 class="footer__title">Follow Me</h4>
-            <ul class="footer__social-list">
-              <li class="footer__social-item">
-                <a
-                  href="https://www.linkedin.com/in/aman-maurya-47b5131b5/"
-                  class="footer__social-link"
-                >
-                  <i class="ri-linkedin-fill"></i>
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a
-                  href="https://www.instagram.com/aman_maurya_9554/"
-                  class="footer__social-link"
-                >
-                  <i class="ri-instagram-fill"></i>
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a
-                  href="https://twitter.com/AmanMaurya9554"
-                  class="footer__social-link"
-                >
-                  <i class="ri-twitter-fill"></i>
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a
-                  href="https://github.com/itsaman123/"
-                  class="footer__social-link"
-                >
-                  <i class="ri-github-fill"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__content">
-            <h4 class="footer__title">Email Me</h4>
-            <a href="mailto:m.amanmaurya49@gmail.com" class="footer__contact">m.amanmaurya49@gmail.com</a>
-          </div>
-          <!-- <div class="footer__content">
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="d-grid footer__wrapper">
+        <div class="footer__content">
+          <h4 class="footer__title">Follow Me</h4>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="https://www.linkedin.com/in/aman-maurya-47b5131b5/" class="footer__social-link">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="https://www.instagram.com/aman_maurya_9554/" class="footer__social-link">
+                <i class="ri-instagram-fill"></i>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="https://twitter.com/AmanMaurya9554" class="footer__social-link">
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="https://github.com/itsaman123/" class="footer__social-link">
+                <i class="ri-github-fill"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h4 class="footer__title">Email Me</h4>
+          <a href="mailto:m.amanmaurya49@gmail.com" class="footer__contact">m.amanmaurya49@gmail.com</a>
+        </div>
+        <!-- <div class="footer__content">
             <h4 class="footer__title">Call Me</h4>
             <a href="#" class="footer__contact">955402xxxx</a>
           </div> -->
-        </div>
-        <p class="footer__copyright">
-          &copy; Designed and Coded by Aman Maurya with Love & Coffee
-        </p>
-
-        <div class="livecounter" style="float: right">
-          <a href="https://www.hitwebcounter.com" target="_blank">
-            <img
-              src="https://hitwebcounter.com/counter/counter.php?page=8023706&style=0001&nbdigits=5&type=page&initCount=0"
-              title="Free Counter"
-              alt="web counter"
-          /></a>
-        </div>
       </div>
-    </footer>
+      <p class="footer__copyright">
+        &copy; Designed and Coded by Aman Maurya with Love & Coffee
+      </p>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <div class="livecounter" style="float: right">
+        <a href="https://www.hitwebcounter.com" target="_blank">
+          <img
+            src="https://hitwebcounter.com/counter/counter.php?page=8023706&style=0001&nbdigits=5&type=page&initCount=0"
+            title="Free Counter" alt="web counter" /></a>
+      </div>
+    </div>
+  </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <script src="assets/js/main.js"></script>
-  </body>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>

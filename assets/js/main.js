@@ -90,6 +90,41 @@ sr.reveal(".qualification__footer-text, .contact__content", {
 
 sr.reveal(".qualification__footer .btn, .contact__btn", { origin: "right" });
 
+// Animate years experience counter
+function animateYearsExperience() {
+  const startDate = new Date('2022-08-01');
+  const now = new Date();
+  let years = now.getFullYear() - startDate.getFullYear();
+  const m = now.getMonth() - startDate.getMonth();
+  if (m < 0 || (m === 0 && now.getDate() < startDate.getDate())) {
+    years--;
+  }
+  // Add decimal for months
+  const months = (now.getMonth() - startDate.getMonth() + 12) % 12;
+  const totalYears = years + months / 12;
+  const displayYears = totalYears.toFixed(1);
+  const el = document.getElementById('years-count');
+  let current = 0;
+  const duration = 1200;
+  const frameRate = 30;
+  const totalFrames = Math.round(duration / (1000 / frameRate));
+  let frame = 0;
+  function update() {
+    frame++;
+    const progress = frame / totalFrames;
+    const value = (displayYears * progress).toFixed(1);
+    el.textContent = value;
+    if (frame < totalFrames) {
+      requestAnimationFrame(update);
+    } else {
+      el.textContent = displayYears;
+    }
+  }
+  update();
+}
+
+document.addEventListener('DOMContentLoaded', animateYearsExperience);
+
 
 
 
