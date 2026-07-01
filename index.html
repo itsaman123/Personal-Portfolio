@@ -24,6 +24,8 @@
 </head>
 
 <body>
+  <div class="cursor-outer"></div>
+  <div class="cursor-inner"></div>
   <header id="header" class="header">
     <div class="container">
       <nav class="nav">
@@ -58,17 +60,24 @@
   </header>
   <main class="main">
     <section id="hero" class="hero">
+      <canvas id="hero-particles"></canvas>
       <div class="container">
         <div class="d-grid hero__wrapper">
           <div class="hero__content">
             <h1 class="hero__title">
               Hi, I am <br />
-              Aman Maurya & <br /> <span class="titleclass" style="font-size: 3.5rem;">I am a Software Developer</span>
+              <span class="hero__name">Aman Maurya</span><br />
+              <span style="font-size: 3.5rem;">I'm a <span class="hero__typewriter"></span><span class="hero__cursor">|</span></span>
             </h1>
           </div>
 
-          <img src="assets/img/profile-pic (9).png" alt="Aman" class="hero__img" />
+          <div class="hero__img-wrap">
+            <img src="assets/img/aman_img.png" alt="Aman" class="hero__img" />
+          </div>
         </div>
+      </div>
+      <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+        <i class="ri-arrow-down-line"></i>
       </div>
     </section>
 
@@ -83,17 +92,14 @@
           <div class="about__content">
             <h3 class="about__title">I'm a MERN Stack Developer.</h3>
             <p class="about__description">
-              I'm Aman Maurya, a dedicated MERN stack developer with a B.Tech in Computer Science from NIET. I
-              specialize in JavaScript, Node.js, REST APIs, HTML, CSS, SQL, and MongoDB.
-
-              Currently working as a Software Developer at Softsensor.ai, I focus on full-stack development using
-              Node.js, Express.js, MongoDB, React.js, TypeScript, TanStack React Query, Redux, and Context API. I follow
-              Agile practices with Jira sprints, improving system performance and user experience.
-
-              Previously, I interned at Prutor@IIT Kanpur and FastFindFirm, building full-stack and React-based
-              applications. I've also developed notable projects like Resilient Community, ConvoCube, and Vehicle Rental
-              Service. I'm skilled in tools like Git, GitHub, and VS Code, and I'm passionate about learning,
-              problem-solving, and contributing to the tech community.
+              I'm Aman Maurya, Full Stack Engineer with 2+ years of experience building and maintaining scalable web
+              applications using Node.js,
+              Express.js, React.js, TypeScript, MongoDB, and Redis. Experienced in designing REST APIs, optimizing
+              database
+              performance, implementing automated testing, and deploying containerized applications. Proven track record
+              of im
+              proving application performance, reducing API latency, and delivering production-ready features in Agile
+              environment
             </p>
             <a href="https://www.linkedin.com/in/aman-maurya-47b5131b5/" class="btn btn--primary">Contact Me</a>
           </div>
@@ -103,9 +109,7 @@
               <div class="skills__content">
                 <h4 class="skills__subtitle"></h4>
                 <ul class="skills__list">
-                  <li class="skills__item">
-                    <i class="fa-brands fa-java"></i> Java
-                  </li>
+
 
                   <li class="skills__item">
                     <i class="fa-brands fa-node-js"></i> Node.js
@@ -122,6 +126,9 @@
                   </li>
                   <li class="skills__item">
                     <i class="fa-brands fa-github"></i> Github
+                  </li>
+                  <li class="skills__item">
+                    <i class="fa-regular fa-square"></i> Redis
                   </li>
                 </ul>
               </div>
@@ -174,7 +181,7 @@
               <div class="experience__location">Jaipur, India</div>
               <div class="experience__date">May 2024 - Current</div>
               <div class="experience__total">Total Experience: <span class="exp-years" data-from="2022-08-01"
-                  data-to="now"></span>1.3 years</div>
+                  data-to="now"></span>2.3 years</div>
             </div>
           </div>
           <div class="experience-timeline__item right">
@@ -259,6 +266,29 @@
         </div>
         <div class="d-grid project__wrapper">
           <!-- pr#1 -->
+
+          <div class="project__content">
+            <img src="assets/img/qr-scanit.png" alt="ecommerce Website" class="project__img" />
+            <h3 class="project__title">QR-Based Ordering System</h3>
+            <p class="project__description">
+              ScanIt is a smart QR menu and restaurant ordering platform for seamless dining and faster service.
+            </p>
+            <a href="https://github.com/itsaman123/Menu" class="project__link">Source Code <i
+                class="ri-arrow-right-line"></i></a>
+
+          </div>
+
+          <div class="project__content">
+            <img src="./assets//img/mern-chat-app.png" alt="error" class="project__img" />
+            <h3 class="project__title">Real Time Chat-App</h3>
+            <p class="project__description">
+              A real-time chat application with secure user authentication and instant messaging.
+            </p>
+            <a href="https://github.com/itsaman123/ConvoCube-MERN-Chat-App" class="project__link">Source Code <i
+                class="ri-arrow-right-line"></i></a>
+          </div>
+
+
           <div class="project__content">
             <img src="assets/img/resil.jpeg" alt="ecommerce Website" class="project__img" />
             <h3 class="project__title">Resilience Community</h3>
@@ -268,15 +298,6 @@
             <a href="https://github.com/itsaman123/Resilient-Community" class="project__link">Source Code <i
                 class="ri-arrow-right-line"></i></a>
 
-          </div>
-          <div class="project__content">
-            <img src="./assets//img/mern-chat-app.png" alt="error" class="project__img" />
-            <h3 class="project__title">Real Time Chat-App</h3>
-            <p class="project__description">
-              A real-time chat application with secure user authentication and instant messaging.
-            </p>
-            <a href="https://github.com/itsaman123/ConvoCube-MERN-Chat-App" class="project__link">Source Code <i
-                class="ri-arrow-right-line"></i></a>
           </div>
           <div class="project__content">
             <img src="assets/img/rental.png" alt="ecommerce Website" class="project__img" />
@@ -304,18 +325,7 @@
           </div>
 
           <!-- pr#2 -->
-          <div class="project__content">
-            <img src="assets/img/portfol.png" alt="portfolio" class="project__img" />
-            <h3 class="project__title">Portfolio</h3>
-            <p class="project__description">
-              It is a website that compiles all my work samples and documents
-              collected in a structured manner covering all projects, skills
-              and Education history.
-            </p>
-            <a href="https://github.com/itsaman123/Personal-Portfolio" class="project__link">Source Code <i
-                class="ri-arrow-right-line"></i></a>
-            <a href="https://imaman.netlify.app/" class="project__link">Demo <i class="ri-arrow-right-line"></i></a>
-          </div>
+
 
           <!-- pr#3 -->
           <div class="project__content">
@@ -385,12 +395,12 @@
               </a>
             </li>
             <li class="footer__social-item">
-              <a href="https://www.instagram.com/aman_maurya_9554/" class="footer__social-link">
+              <a href="https://www.instagram.com/hey.a_man" class="footer__social-link">
                 <i class="ri-instagram-fill"></i>
               </a>
             </li>
             <li class="footer__social-item">
-              <a href="https://twitter.com/AmanMaurya9554" class="footer__social-link">
+              <a href="https://x.com/AmanMaurya9554" class="footer__social-link">
                 <i class="ri-twitter-fill"></i>
               </a>
             </li>
